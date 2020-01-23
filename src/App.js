@@ -1,16 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Sidebar from './components/Sidebar.js';
-import MainPage from './components/MainPage.js';
+import Intro from './components/Intro.js';
+import CV from './components/CV.js';
+import Links from './components/Links.js';
+import OtherStuff from './components/OtherStuff.js';
 
+import { Element } from 'react-scroll'
 
 function App() {
   return (
     <div className="App">
 
       <Sidebar></Sidebar>
-      <MainPage></MainPage>
+<Element id='intro' name='intro'>
+      <Intro></Intro>
+</Element>
+
+<Element id='cv' name='cv'>
+      <CV/>
+</Element>
+
+<Element id='Links' name='Links'>
+      <Links/>
+</Element>
+
+<Element id='OtherStuff' name='OtherStuff'>
+      <OtherStuff/>
+</Element>
+
     </div>
 
   );

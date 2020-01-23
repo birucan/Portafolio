@@ -1,13 +1,60 @@
 import React from 'react';
 import './Styles.css';
+import CirclePic from './CirclePic.js';
+import{ Link} from 'react-scroll'
+
+
 function Sidebar() {
   return (
     <div className="Sidebar">
+
+    <CirclePic></CirclePic>
     <h5>Hi, I'm Tomás Kavanagh</h5>
-    <a classname="sideLinks" href="home">Home</a>
-    <a href="news">News</a>
-    <a href="contact">Contact</a>
-    <a href="about">About</a>
+    <Link
+           to="intro"
+           spy={true}
+           smooth={true}
+           duration={500}
+           className="LinksScroll"
+           activeClass="active"
+         >
+    Intro
+</Link>
+
+<Link
+       to="cv"
+       spy={true}
+       smooth={true}
+       duration={500}
+       className="LinksScroll"
+       activeClass="active"
+     >
+CV
+</Link>
+
+<Link
+       to="Links"
+       spy={true}
+       smooth={true}
+       duration={500}
+       className="LinksScroll"
+       activeClass="active"
+     >
+Links
+</Link>
+
+<Link
+       to="OtherStuff"
+       spy={true}
+       smooth={true}
+       duration={500}
+       className="LinksScroll"
+       activeClass="active"
+     >
+Other Stuff
+</Link>
+
+
     </div>
   );
 }

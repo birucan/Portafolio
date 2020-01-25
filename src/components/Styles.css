@@ -111,7 +111,7 @@ display: block;
 
 color: var(--colfive);
 background-color: var(--coltwo);
-animation-duration: 1s;
+animation-duration: 0.8s;
 animation-fill-mode: forwards;
 animation-name: fade;
 }
@@ -119,9 +119,9 @@ animation-name: fade;
 @keyframes fade{
 0% {background-color: var(--coltwo); color: var(--colfive);}
 75% { color: var(--colfour); box-shadow: inset var(--sidebarsize) 0 0 0 var(--colone);}
-80%{color: var(--colfour); box-shadow: inset var(--sidebarsize) 0 0 0 var(--colone); transform: translateX(0px);}
-90%{color: var(--colfour); box-shadow: inset var(--sidebarsize) 0 0 0 var(--colone); transform: translateX(15px);}
-100%{color: var(--colfour); box-shadow: inset var(--sidebarsize) 0 0 0 var(--colone); transform: translateX(0px);}
+80%{color: var(--colfour); box-shadow: inset var(--sidebarsize) 0 0 0 var(--colone); transform: translateY(0px);}
+90%{color: var(--colfour); box-shadow: inset var(--sidebarsize) 0 0 0 var(--colone); transform: translateY(-10px);}
+100%{color: var(--colfour); box-shadow: inset var(--sidebarsize) 0 0 0 var(--colone); transform: translateY(0px);}
 }
 .cPP{
   padding-top: 5%;

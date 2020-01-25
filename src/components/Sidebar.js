@@ -29,7 +29,7 @@ function Sidebar() {
        className="LinksScroll"
        activeClass="active"
      >
-CV
+Resume
 </Link>
 
 <Link

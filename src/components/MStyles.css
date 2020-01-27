@@ -63,6 +63,17 @@ mtextCV{
   background-color: var(--colthree);
   color: var(--colfive);
 }
+
+.mProjects{
+  #margin-left: var(--msidebarsize);
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: var(--msidebarsize);
+  height: auto;
+  width: auto;
+  background-color: var(--colfour);
+  color: var(--colone);
+}
 .mOtherStuff{
   #margin-left: var(--msidebarsize);
   padding-left: var(--msidebarsize);

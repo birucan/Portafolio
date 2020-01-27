@@ -38,6 +38,17 @@ Resume
 </Link>
 
 <Link
+       to="Projects"
+       spy={true}
+       smooth={true}
+       duration={500}
+       className="LinksScroll"
+       activeClass="active"
+     >
+Projects
+</Link>
+
+<Link
        to="Links"
        spy={true}
        smooth={true}

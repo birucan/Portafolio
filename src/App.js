@@ -5,33 +5,63 @@ import Intro from './components/Intro.js';
 import CV from './components/CV.js';
 import Links from './components/Links.js';
 import OtherStuff from './components/OtherStuff.js';
-
+import MSidebar from './components/MSidebar.js';
 import { Element } from 'react-scroll'
 
 function App() {
-  return (
-    <div className="App">
+        let width = window.innerWidth;
+        if (width > 768) {
+          return (
+            <div className="App">
 
-      <Sidebar></Sidebar>
-<Element id='intro' name='intro'>
-      <Intro></Intro>
-</Element>
+              <Sidebar></Sidebar>
+        <Element id='intro' name='intro'>
+              <Intro></Intro>
+        </Element>
 
-<Element id='cv' name='cv'>
-      <CV/>
-</Element>
+        <Element id='cv' name='cv'>
+              <CV/>
+        </Element>
 
-<Element id='Links' name='Links'>
-      <Links/>
-</Element>
+        <Element id='Links' name='Links'>
+              <Links/>
+        </Element>
 
-<Element id='OtherStuff' name='OtherStuff'>
-      <OtherStuff/>
-</Element>
+        <Element id='OtherStuff' name='OtherStuff'>
+              <OtherStuff/>
+        </Element>
 
-    </div>
+            </div>
 
-  );
+          );
+        } else {
+          return (
+            <div className="App">
+          
+        <MSidebar></MSidebar>
+        <Element id='intro' name='intro'>
+              <Intro></Intro>
+        </Element>
+
+        <Element id='cv' name='cv'>
+              <CV/>
+        </Element>
+
+        <Element id='Links' name='Links'>
+              <Links/>
+        </Element>
+
+        <Element id='OtherStuff' name='OtherStuff'>
+              <OtherStuff/>
+        </Element>
+
+            </div>
+
+
+
+
+          );
+        }
 }
 
 export default App;

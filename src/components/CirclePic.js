@@ -1,13 +1,24 @@
 import React from 'react';
 import './Styles.css';
+import './MStyles.css';
 import pic from "./assets/tempPP.jpg";
 function CirclePic() {
-  return (
-    //todo: change pic
-    <div className="CirclePic">
-        <img src={pic} className="cPP" alt="cPP"/>
-    </div>
-  );
+
+  let width = window.innerWidth;
+  if (width > 768) {
+    return (
+      <div className="CirclePic">
+          <img src={pic} className="cPP" alt="cPP"/>
+      </div>
+);
+}else{
+
+return (
+  <div className="CirclePic">
+      <img src={pic} className="mcPP" alt="cPP"/>
+  </div>
+);
+}
 }
 
 export default CirclePic;

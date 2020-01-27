@@ -1,16 +1,20 @@
 import React from 'react';
 import './Styles.css';
+import './MStyles.css';
 import CirclePic from './CirclePic.js';
 import{ Link} from 'react-scroll'
 
 
-function Sidebar() {
+function MSidebar() {
   return (
-    <div className="Sidebar">
+    <div className="mSidebar">
 
     <CirclePic></CirclePic>
-    <h5>Hi, I'm Tomás Kavanagh</h5>
-    <h6>refresh with diferent resolution for mobile version version</h6>
+
+
+    <h5>Hi, I'm Tomás Kavanagh, this is the mobile version of the site</h5>
+    <h6>refresh with diferent resolution for desktop version</h6>
+
     <Link
            to="intro"
            spy={true}
@@ -60,4 +64,4 @@ Other Stuff
   );
 }
 
-export default Sidebar;
+export default MSidebar;

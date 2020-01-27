@@ -11,6 +11,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow: auto;
 }
 /*
 *page Components
@@ -65,6 +66,17 @@ textCV{
   width: auto;
   background-color: var(--colthree);
   color: var(--colfive);
+}
+
+.Projects{
+  #margin-left: var(--sidebarsize);
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: var(--sidebarsize);
+  height: auto;
+  width: auto;
+  background-color: var(--colfour);
+  color: var(--colone);
 }
 .OtherStuff{
   #margin-left: var(--sidebarsize);

@@ -10,7 +10,7 @@ function CV() {
     <h1>Resume</h1>
     <cvLink>
     <textCV>if you wish to download my formal resume the link is right here.</textCV>
-    <a  href='https://drive.google.com/open?id=1v06Ln16Xzdy1RkPLylydTnvbFo-Dur7Q' >
+    <a  href='https://drive.google.com/open?id=1nXKrcA3f-oEDEPUTCqMgSW-Q5AH79iPI' >
     <img src={pdf}className="pdf"/>
     </a>
     </cvLink>
@@ -23,7 +23,7 @@ else{
     <h1>Resume</h1>
     <mcvLink>
     <mtextCV>if you wish to download my formal resume the link is right here.</mtextCV>
-    <a  href='https://drive.google.com/open?id=1v06Ln16Xzdy1RkPLylydTnvbFo-Dur7Q' >
+    <a  href='https://drive.google.com/open?id=1nXKrcA3f-oEDEPUTCqMgSW-Q5AH79iPI' >
     <img src={pdf}className="pdf"/>
     </a>
     </mcvLink>

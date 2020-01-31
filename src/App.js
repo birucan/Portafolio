@@ -9,6 +9,15 @@ import OtherStuff from './components/OtherStuff.js';
 import MSidebar from './components/MSidebar.js';
 import { Element } from 'react-scroll'
 
+class Lang extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      lang: 'eng'
+    };
+  }
+  }
+
 function App() {
         let width = window.innerWidth;
         if (width > 768) {

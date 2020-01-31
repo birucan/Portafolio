@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Portafolio/static/css/main.098bd61b.chunk.css",
-    "main.js": "/Portafolio/static/js/main.12349f81.chunk.js",
-    "main.js.map": "/Portafolio/static/js/main.12349f81.chunk.js.map",
+    "main.js": "/Portafolio/static/js/main.64f5beb4.chunk.js",
+    "main.js.map": "/Portafolio/static/js/main.64f5beb4.chunk.js.map",
     "runtime-main.js": "/Portafolio/static/js/runtime-main.c0c64a1c.js",
     "runtime-main.js.map": "/Portafolio/static/js/runtime-main.c0c64a1c.js.map",
-    "static/js/2.b65ac04b.chunk.js": "/Portafolio/static/js/2.b65ac04b.chunk.js",
-    "static/js/2.b65ac04b.chunk.js.map": "/Portafolio/static/js/2.b65ac04b.chunk.js.map",
+    "static/js/2.79131746.chunk.js": "/Portafolio/static/js/2.79131746.chunk.js",
+    "static/js/2.79131746.chunk.js.map": "/Portafolio/static/js/2.79131746.chunk.js.map",
     "index.html": "/Portafolio/index.html",
-    "precache-manifest.8017f9fdbaae86169cbc02eb83a700a5.js": "/Portafolio/precache-manifest.8017f9fdbaae86169cbc02eb83a700a5.js",
+    "precache-manifest.05c8fbc0eccfccafcc2422149ed08332.js": "/Portafolio/precache-manifest.05c8fbc0eccfccafcc2422149ed08332.js",
     "service-worker.js": "/Portafolio/service-worker.js",
     "static/css/main.098bd61b.chunk.css.map": "/Portafolio/static/css/main.098bd61b.chunk.css.map",
-    "static/js/2.b65ac04b.chunk.js.LICENSE": "/Portafolio/static/js/2.b65ac04b.chunk.js.LICENSE",
+    "static/js/2.79131746.chunk.js.LICENSE": "/Portafolio/static/js/2.79131746.chunk.js.LICENSE",
     "static/media/email.svg": "/Portafolio/static/media/email.c66ee6f6.svg",
     "static/media/github.svg": "/Portafolio/static/media/github.1bb02710.svg",
     "static/media/java.svg": "/Portafolio/static/media/java.a732a6e5.svg",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c0c64a1c.js",
-    "static/js/2.b65ac04b.chunk.js",
+    "static/js/2.79131746.chunk.js",
     "static/css/main.098bd61b.chunk.css",
-    "static/js/main.12349f81.chunk.js"
+    "static/js/main.64f5beb4.chunk.js"
   ]
 }

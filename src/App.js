@@ -12,7 +12,7 @@ import ReactGA from 'react-ga';
 
 
 
-   ReactGA.initialize('UA-157702478-1');
+ReactGA.initialize('UA-157702478-1');
 
 
 class Lang extends React.Component {

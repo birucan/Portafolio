@@ -8,6 +8,12 @@ import Projects from './components/Projects.js';
 import OtherStuff from './components/OtherStuff.js';
 import MSidebar from './components/MSidebar.js';
 import { Element } from 'react-scroll'
+import ReactGA from 'react-ga';
+
+
+
+   ReactGA.initialize('UA-157702478-1');
+
 
 class Lang extends React.Component {
   constructor(props) {

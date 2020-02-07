@@ -9,8 +9,8 @@ function Sidebar() {
     <div className="Sidebar">
 
     <CirclePic></CirclePic>
-    <h5>Hi, I'm Tomás Kavanagh</h5>
-    <h6>refresh with diferent resolution for mobile version version</h6>
+    <h5>Hi, I'm Tomás Kavanagh, this is the desktop version of this site.</h5>
+
     <Link
            to="intro"
            spy={true}
@@ -67,7 +67,6 @@ Links
      >
 Other Stuff
 </Link>
-
 
     </div>
   );

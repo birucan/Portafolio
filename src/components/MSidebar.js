@@ -12,8 +12,8 @@ function MSidebar() {
     <CirclePic></CirclePic>
 
 
-    <h5>Hi, I'm Tomás Kavanagh, this is the mobile version of the site</h5>
-    <h6>refresh with diferent resolution for desktop version</h6>
+    <h5>Hi, I'm Tomás Kavanagh, this is the mobile version of the site.</h5>
+
 
     <Link
            to="intro"

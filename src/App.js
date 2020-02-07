@@ -12,80 +12,91 @@ import ReactGA from 'react-ga';
 
 
 
-ReactGA.initialize('UA-157702478-1');
 
 
-class Lang extends React.Component {
+
+
+class App extends React.Component {
+
   constructor(props) {
     super(props);
-    this.state = {
-      lang: 'eng'
-    };
-  }
+    this.state = {wdt: window.innerWidth};
   }
 
-function App() {
-        let width = window.innerWidth;
-        if (width > 768) {
-          return (
-            <div className="App">
-
-              <Sidebar></Sidebar>
-        <Element id='intro' name='intro'>
-              <Intro></Intro>
-        </Element>
-
-        <Element id='cv' name='cv'>
-              <CV/>
-        </Element>
-
-        <Element id='Links' name='Links'>
-              <Links/>
-        </Element>
-
-        <Element id='Projects' name='Projects'>
-              <Projects/>
-        </Element>
-
-        <Element id='OtherStuff' name='OtherStuff'>
-              <OtherStuff/>
-        </Element>
-
-            </div>
-
-          );
-        } else {
-          return (
-            <div className="App">
-
-        <MSidebar></MSidebar>
-        <Element id='intro' name='intro'>
-              <Intro></Intro>
-        </Element>
-
-        <Element id='cv' name='cv'>
-              <CV/>
-        </Element>
-
-        <Element id='Projects' name='Projects'>
-              <Projects/>
-        </Element>
-
-        <Element id='Links' name='Links'>
-              <Links/>
-        </Element>
-
-        <Element id='OtherStuff' name='OtherStuff'>
-              <OtherStuff/>
-        </Element>
-
-            </div>
+  componentDidMount() {
+    ReactGA.initialize('UA-157702478-1');
+    this.interval = setInterval(() => this.setState({ wdt: window.innerWidth }), 100);
+  }
 
 
+  componentWillUnmount() {
+  clearInterval(this.interval);
+}
+
+  render(){
+    let width = this.state.wdt;
+    if (width > 768) {
+      return (
+        <div className="App">
+
+          <Sidebar></Sidebar>
+    <Element id='intro' name='intro'>
+          <Intro></Intro>
+    </Element>
+
+    <Element id='cv' name='cv'>
+          <CV/>
+    </Element>
+
+    <Element id='Links' name='Links'>
+          <Links/>
+    </Element>
+
+    <Element id='Projects' name='Projects'>
+          <Projects/>
+    </Element>
+
+    <Element id='OtherStuff' name='OtherStuff'>
+          <OtherStuff/>
+    </Element>
+
+        </div>
+
+      );
+    } else {
+      return (
+        <div className="App">
+
+    <MSidebar></MSidebar>
+    <Element id='intro' name='intro'>
+          <Intro></Intro>
+    </Element>
+
+    <Element id='cv' name='cv'>
+          <CV/>
+    </Element>
+
+    <Element id='Projects' name='Projects'>
+          <Projects/>
+    </Element>
+
+    <Element id='Links' name='Links'>
+          <Links/>
+    </Element>
+
+    <Element id='OtherStuff' name='OtherStuff'>
+          <OtherStuff/>
+    </Element>
+
+        </div>
 
 
-          );
-        }
+
+
+      );
+    }
+  }
+
 }
 
 export default App;

@@ -134,9 +134,9 @@ animation-name: mfade;
 
 .mcPP{
   padding-top: 5%;
-width: 30%;
+width: auto;
 height: auto;
-border-radius: 50%;
+border-radius: 75%;
 }
 
 .mpdf{

@@ -12,7 +12,7 @@ import ReactGA from 'react-ga';
 
 
 
-
+ReactGA.initialize('UA-157702478-1');
 
 
 
@@ -20,7 +20,8 @@ class App extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {wdt: window.innerWidth};
+    this.state = {wdt: window.innerWidth,
+    lan:0};
   }
 
   componentDidMount() {
@@ -33,31 +34,35 @@ class App extends React.Component {
   clearInterval(this.interval);
 }
 
+  lanHandle(num){
+    this.setState({lan: num})
+  }
+
   render(){
     let width = this.state.wdt;
     if (width > 768) {
       return (
         <div className="App">
 
-          <Sidebar></Sidebar>
+          <Sidebar  changeLang={this.lanHandle.bind(this)}></Sidebar>
     <Element id='intro' name='intro'>
-          <Intro></Intro>
+          <Intro lan={this.state.lan}/>
     </Element>
 
     <Element id='cv' name='cv'>
-          <CV/>
+          <CV lan={this.state.lan}/>
     </Element>
 
     <Element id='Links' name='Links'>
-          <Links/>
+          <Links lan={this.state.lan}/>
     </Element>
 
     <Element id='Projects' name='Projects'>
-          <Projects/>
+          <Projects lan={this.state.lan} />
     </Element>
 
     <Element id='OtherStuff' name='OtherStuff'>
-          <OtherStuff/>
+          <OtherStuff lan={this.state.lan}/>
     </Element>
 
         </div>
@@ -67,25 +72,25 @@ class App extends React.Component {
       return (
         <div className="App">
 
-    <MSidebar></MSidebar>
+    <MSidebar changeLang={this.lanHandle.bind(this)} lan={this.state.lan}></MSidebar>
     <Element id='intro' name='intro'>
-          <Intro></Intro>
+          <Intro lan={this.state.lan}></Intro>
     </Element>
 
     <Element id='cv' name='cv'>
-          <CV/>
+          <CV lan={this.state.lan}/>
     </Element>
 
     <Element id='Projects' name='Projects'>
-          <Projects/>
+          <Projects lan={this.state.lan}/>
     </Element>
 
     <Element id='Links' name='Links'>
-          <Links/>
+          <Links lan={this.state.lan}/>
     </Element>
 
     <Element id='OtherStuff' name='OtherStuff'>
-          <OtherStuff/>
+          <OtherStuff lan={this.state.lan}/>
     </Element>
 
         </div>
